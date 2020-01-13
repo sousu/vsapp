@@ -1,5 +1,5 @@
 
-### VisualStudioアプリテンプレート
+## VisualStudioアプリテンプレート
 
 VBによるWindowsアプリ作成時のテンプレート
 
