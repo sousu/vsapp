@@ -27,4 +27,5 @@ Public Class BackWorker
     Public Function isWorking()
         Return If(Not thread Is Nothing, True, False)
     End Function
+
 End Class

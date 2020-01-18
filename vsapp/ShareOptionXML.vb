@@ -42,7 +42,7 @@ Public Class ShareOptionXML
         Dim p As String = GetSettingPath()
 
         Dim sw As New StreamWriter(p, False, New UTF8Encoding(False))
-        Dim xs As New System.Xml.Serialization.XmlSerializer(GetType(ShareOptionXML))
+        Dim xs As New Xml.Serialization.XmlSerializer(GetType(ShareOptionXML))
         'シリアル化して書き込む
         xs.Serialize(sw, Instance)
         sw.Close()
@@ -57,4 +57,5 @@ Public Class ShareOptionXML
         '    + "\" + Application.ProductName + ".config")
         Return p
     End Function
+
 End Class

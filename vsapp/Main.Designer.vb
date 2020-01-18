@@ -35,12 +35,14 @@ Partial Class Main
         'btnShareOption
         '
         Me.btnShareOption.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnShareOption.BackColor = System.Drawing.SystemColors.Control
         Me.btnShareOption.Image = CType(resources.GetObject("btnShareOption.Image"), System.Drawing.Image)
-        Me.btnShareOption.Location = New System.Drawing.Point(638, 12)
+        Me.btnShareOption.Location = New System.Drawing.Point(863, 13)
+        Me.btnShareOption.Margin = New System.Windows.Forms.Padding(4)
         Me.btnShareOption.Name = "btnShareOption"
-        Me.btnShareOption.Size = New System.Drawing.Size(34, 27)
+        Me.btnShareOption.Size = New System.Drawing.Size(36, 34)
         Me.btnShareOption.TabIndex = 1
-        Me.btnShareOption.UseVisualStyleBackColor = True
+        Me.btnShareOption.UseVisualStyleBackColor = False
         '
         'SplitContainer1
         '
@@ -60,9 +62,8 @@ Partial Class Main
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.rtbDisplay)
         Me.SplitContainer1.Panel2MinSize = 200
-        Me.SplitContainer1.Size = New System.Drawing.Size(684, 523)
+        Me.SplitContainer1.Size = New System.Drawing.Size(912, 654)
         Me.SplitContainer1.SplitterDistance = 100
-        Me.SplitContainer1.SplitterWidth = 3
         Me.SplitContainer1.TabIndex = 1
         '
         'rtbDisplay
@@ -73,19 +74,20 @@ Partial Class Main
         Me.rtbDisplay.Location = New System.Drawing.Point(0, 0)
         Me.rtbDisplay.Margin = New System.Windows.Forms.Padding(0)
         Me.rtbDisplay.Name = "rtbDisplay"
-        Me.rtbDisplay.Size = New System.Drawing.Size(684, 420)
+        Me.rtbDisplay.Size = New System.Drawing.Size(912, 550)
         Me.rtbDisplay.TabIndex = 1
         Me.rtbDisplay.Text = ""
         '
         'Main
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(684, 523)
+        Me.ClientSize = New System.Drawing.Size(912, 654)
         Me.Controls.Add(Me.SplitContainer1)
         Me.DataBindings.Add(New System.Windows.Forms.Binding("Location", Global.vsapp.My.MySettings.Default, "myLoc", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.Location = Global.vsapp.My.MySettings.Default.myLoc
-        Me.MinimumSize = New System.Drawing.Size(700, 550)
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MinimumSize = New System.Drawing.Size(927, 676)
         Me.Name = "Main"
         Me.Text = "Main"
         Me.SplitContainer1.Panel1.ResumeLayout(False)
