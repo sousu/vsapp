@@ -31,7 +31,7 @@ Partial Class ShareOption
         'btnOK
         '
         Me.btnOK.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnOK.Location = New System.Drawing.Point(244, 196)
+        Me.btnOK.Location = New System.Drawing.Point(162, 65)
         Me.btnOK.Name = "btnOK"
         Me.btnOK.Size = New System.Drawing.Size(52, 23)
         Me.btnOK.TabIndex = 0
@@ -41,7 +41,7 @@ Partial Class ShareOption
         'btnChancel
         '
         Me.btnChancel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnChancel.Location = New System.Drawing.Point(302, 196)
+        Me.btnChancel.Location = New System.Drawing.Point(220, 65)
         Me.btnChancel.Name = "btnChancel"
         Me.btnChancel.Size = New System.Drawing.Size(52, 23)
         Me.btnChancel.TabIndex = 1
@@ -68,7 +68,7 @@ Partial Class ShareOption
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(366, 231)
+        Me.ClientSize = New System.Drawing.Size(284, 100)
         Me.Controls.Add(Me.tbInterval)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnChancel)
